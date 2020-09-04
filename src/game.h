@@ -9,9 +9,9 @@ private:
     std::vector<int> filled;
 
 public:
-    Game()
+    Game(int p)
     {
-        player = 0; // Denotes player id (AI -> 0, HUMAN -> 1)
+        player = p; // Denotes player id (AI -> 0, HUMAN -> 1)
         filled.resize(9);
         std::fill(filled.begin(), filled.end(), -1); // Game board is initialized with -1 to denote empty cell
     }
@@ -37,7 +37,7 @@ public:
     // Returns a "Transistion Model" which defines the result of an action
     Game result(int action)
     {
-        Game result_model;
+        Game result_model(0);
         result_model.player = player;
         result_model.filled = filled;
         result_model.filled[action] = result_model.player;
