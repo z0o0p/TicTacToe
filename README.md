@@ -1,5 +1,7 @@
 # Tic Tac Toe - AI Game Player
-<center>![](TicTacToe.png)</center>
+<p align="center">
+    <img src="TicTacToe.png" alt="TicTacToe">
+</p>
 
 TicTacToe or X-O is a well-known game that has been played by almost everyone during their student days. This project is about creating an intelligent game-playing agent that can never be beaten in TicTacToe.
 
