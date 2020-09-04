@@ -36,7 +36,7 @@ void play_game(Game game)
     if (!game.current_player())
     {
         cout << "AI TURN" << endl;
-        move = minimax(game);
+        move = alpha_beta(game);
     }
     else
     {
